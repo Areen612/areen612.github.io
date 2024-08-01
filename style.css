@@ -55,8 +55,6 @@ body {
   margin-right: 10px;
 }
 
-
-
 /* Titles */
 
 h2 {
@@ -68,7 +66,6 @@ h2 {
   margin: 30px;
   margin-left: 60px;
   margin-top: 40px;
-  margin-bottom: 0px;
 }
 
 .introduction {
@@ -113,7 +110,7 @@ h2 {
   width: 550px;
   height: fit-content;
   vertical-align: middle;
-  margin: 5px;
+  margin-top: 50px;
 }
 
 /* Skills */
@@ -198,45 +195,38 @@ h2 {
   padding: 0 15px;
 }
 
+
 .project-card {
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  /* Align items vertically */
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow */
+  padding: 1rem;
+  margin: 1rem;
   border-radius: 8px;
-  /* Rounded corners */
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
-  width: 95%;
-  margin-left: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+
 }
+
 
 .project-card:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  /* Enhanced shadow on hover */
 }
 
 .project-card h3 {
   font-size: 1.3rem;
-  /* color: #7600bc; */
-  /* A vibrant color for titles */
-  /* flex-grow: 1; */
-  /* Allows the title to take up any extra space */
+  color: #7600bc;
+  flex-grow: 1;
   margin: 0 20px;
-  /* Spacing around the title */
 }
 
 .project-card ul {
   margin: 0;
   padding: 20px;
   list-style: none;
-  /* Removes default list styling */
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* Space between list items */
 }
 
 .project-card li {
@@ -244,90 +234,20 @@ h2 {
   line-height: 1.6;
 }
 
-/* Adjustments for smaller screens */
 @media (max-width: 768px) {
   .project-card {
     flex-direction: column;
-    /* Stack items on smaller screens */
   }
 
   .project-card ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    /* Center items for a better look on small screens */
   }
 
   .project-card li {
     width: 100%;
-    /* Full width for list items on small screens */
   }
-}
-
-
-/* Recommendations Styling Enhancements */
-.all_recommendations {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  /* Improves spacing between cards */
-  padding: 20px;
-  gap: 20px;
-  /* Ensures consistent spacing on all sides */
-}
-
-.recommendation {
-  font-style: italic;
-  text-align: center;
-  /* Center-aligns the text for a more balanced appearance */
-  width: 21.875rem;
-  /* background: linear-gradient(145deg, #ffffff, #e8bcf0); */
-  /* Soft gradient background */
-  border-radius: 15px;
-  /* Rounded corners for a softer look */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow for depth */
-  padding: 20px;
-  margin: 10px;
-  border: none;
-  /* Removes the border for a cleaner look */
-  font-size: 1rem;
-  height: auto;
-  /* Allows the height to adjust based on content */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* Ensures consistent spacing within the card */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Smooth transitions for hover effects */
-}
-
-.recommendation:hover {
-  transform: translateY(-5px);
-  /* Slight lift effect on hover */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  /* Enhanced shadow on hover */
-}
-
-.recommendation span {
-  color: #f1a2f9;
-  /* Updates color to a more modern hue */
-  font-size: 1.25rem;
-  /* Slightly larger for emphasis */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  /* Modern, readable font */
-  display: block;
-  /* Ensures quotes are on their own line */
-  margin: 10px 0;
-  /* Adds space around quotes for visual separation */
-}
-
-/* Enhancements for the heading */
-#recommendations h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-  /* font-size: 2.5rem; */
-  color: #7600bc;
 }
 
 /* Scroll to Top Button */
@@ -357,7 +277,7 @@ h2 {
   transform: translate(-50%, -50%);
   text-align: center;
   position: fixed;
-  /* padding: 30px; */
+  padding: 30px;
   visibility: hidden;
 }
 
@@ -390,26 +310,6 @@ h2 {
   margin-left: 25%;
 }
 
-/* Recommendation Form */
-
-input,
-textarea {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin: 10px;
-  width: 100%;
-}
-
-fieldset {
-  display: flexbox;
-  align-content: center;
-  justify-content: center;
-  padding: 25px;
-  margin-left: 50px;
-  margin-right: 50px;
-  border: thin solid white;
-  width: 50%;
-}
-
 /* Buttons */
 
 button {
@@ -433,4 +333,87 @@ button:hover {
   border-radius: 6px;
   text-align: center;
   cursor: pointer;
+}
+
+#certificates {
+  padding: 50px 0; 
+  background-color: #fff;; 
+}
+
+#certificates h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #7600bc;
+  /* margin-top: 30px; */
+  margin-bottom: 40px;
+}
+
+.certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.certificate-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  max-width: 200px;
+  flex: 1;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.certificate-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.certificate-card p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.certificate-card:hover {
+  transform: scale(1.05);
+}
+
+/* Certificates */
+
+.certificate-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.certificate-item:hover {
+  transform: scale(1.05);
+}
+
+.certificate-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.certificate-item p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+.certificates-container {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
 }
