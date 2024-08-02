@@ -3,7 +3,6 @@ body {
 }
 
 /* Navigation Bar */
-
 #home {
   background-color: #7600bc;
   margin-left: -1cm;
@@ -56,7 +55,6 @@ body {
 }
 
 /* Titles */
-
 h2 {
   text-align: justify;
   font-size: 50px;
@@ -80,15 +78,11 @@ h2 {
 }
 
 /* Used in the About Me sections */
-
 .container {
   display: flex;
-  /* padding-left: 5px;
-  padding-right: 5px; */
 }
 
 /* About Me */
-
 .about-me {
   display: flex;
   align-items: center;
@@ -111,6 +105,78 @@ h2 {
   height: fit-content;
   vertical-align: middle;
   margin-top: 50px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  #about-me h1 {
+    font-size: 50px;
+  }
+
+  #about-me p {
+    font-size: 20px;
+  }
+
+  .profile_image {
+    width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .topdiv {
+    padding-right: 0;
+  }
+
+  .profile_name {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .topmenu {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  #about-me {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about-me h1 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  #about-me p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .profile_image {
+    width: 350px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #about-me h1 {
+    font-size: 30px;
+  }
+
+  #about-me p {
+    font-size: 16px;
+  }
+
+  .profile_image {
+    width: 250px;
+  }
 }
 
 /* Skills */
