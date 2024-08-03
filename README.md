@@ -3,51 +3,85 @@
 **Software Engineer**  
 +962 791 560 686 | Amman, Jordan  
 [LinkedIn Profile](https://www.linkedin.com/in/areen-albargothy/)
+Sure, here is the actual `README.md` file:
 
-## Professional Summary
-Highly motivated software engineer with a passion for innovative technologies. Seeking a challenging position to apply my expertise in transforming business goals into streamlined system designs. Known for strong analytical thinking and creative problem-solving skills, I focus on enhancing automated productivity. A collaborative team player with excellent communication skills, I am eager to join a forward-thinking organization and contribute to shaping its technological landscape.
+```markdown
+# Areen Albargothy's Portfolio
 
-## Experience
+Welcome to my portfolio website! This website showcases my professional skills, projects, and certifications. It is built using HTML, CSS, and JavaScript.
 
-**Data Scientist, LexisNexis**  
-Amman, Jordan (09/2023 - Present)
-- Implemented serverless architecture on AWS, building Lambda functions and conducting unit tests.
-- Utilized Azure DevOps for version control and managing collaborative workflows.
-- Automated deployment processes using Jenkins, creating templates for consistent and reliable application deployment.
-- Conducted code reviews, identified performance bottlenecks, and implemented optimizations.
-- Contributed to comprehensive documentation for various processes and solutions.
+## Table of Contents
 
-**Full Stack Developer, Capella Solutions**  
-Amman, Jordan (09/2023 - Present)
-- Developed and maintained dynamic and responsive web applications using Angular, TypeScript, and ASP.NET.
-- Collaborated with cross-functional teams to gather requirements, design system architecture, and ensure alignment with business objectives.
+- [About the Project](#about-the-project)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contact](#contact)
 
-**Associate Software Engineer, bayt.com**  
-Amman, Jordan (02/2023 - 07/2023)
-- Analyzed user needs and technical requirements.
-- Determined the feasibility of design and implementation.
-- Maintained an understanding of web technologies.
-- Adhered to software development methodology and standards.
+## About the Project
 
-## Education
-**Bachelor’s Degree in Computer Science**  
-Princess Sumaya University for Technology, Amman, Jordan (01/2018 - 01/2022)  
-GPA: Very Good
+This portfolio website is designed to highlight my expertise and experience as a software engineer. It includes sections for an introduction, skills, projects, and certifications. The site is fully responsive and provides a seamless experience across different devices and screen sizes.
 
-## Skills
-- **Programming Languages:** C, C++, C#, Python, TCL
-- **Frameworks/Technologies:** Django, Flask, React, Angular, ASP.NET
-- **Cloud Services:** AWS (Lambda, S3, EC2, SNS)
-- **Databases:** MySQL, PostgreSQL, Firebase
-- **Others:** RESTful APIs, WebSocket, Mobile Development (Flutter, Dart), Git, GitHub, GitLab, Bitbucket, Docker, Jenkins, Azure DevOps, Object-oriented programming, Data Structures and Algorithms, Unit Testing, Clean Code, SOLID Principles, Design Patterns (MTV, MVC)
+## Technologies Used
 
-## Projects & Freelance Work
-- **AI-Driven Donor Matching and Extraction Program:** Implemented at LexisNexis, leveraging Zyte for scraping donor PDFs and integrating AWS services (S3, EC2, Textract). The solution excels in extracting text from images and post-processing to deliver valuable human-readable information.
-- **Freelance Mobile Application Development:** Developed an app similar to Uber Eats using Flutter for the frontend and Django for backend APIs. Integrated with Google Maps API for customer and driver functionality.
-- **Job Board API App:** Developed using Ruby on Rails.
-- **Database Administration Training:** Completed at Electronic Health Solutions Co. (EHS).
-- **Graduation Project:** Created an innovative Employment Mobile Application using Flutter and Firebase.
-- **Mobile Application Development Training:** Completed intensive training at dot. Jordan, focusing on Flutter for cross-platform app development.
-- **4 Stages Alzheimer Detection AI:** Developed using Python.
-- **Maze Game:** Created using assembly language.
-- **E-commerce Desktop Application:** Developed using C# and SQLite.
+- HTML
+- CSS
+- JavaScript
+
+## Project Structure
+
+```
+project-directory/
+│
+├── html_finalprojimages/       # Directory containing images used in the project
+├── script.js                   # JavaScript file for interactive elements
+├── style.css                   # CSS file for styling the website
+├── index.html                  # Main HTML file for the website
+└── README.md                   # This README file
+```
+
+## Features
+
+- **Responsive Design:** The website adapts to different screen sizes for an optimal viewing experience on all devices.
+- **Interactive Elements:** JavaScript is used to add interactivity to the website.
+- **Showcase of Skills and Projects:** Detailed sections that describe my skills and showcase my projects and certifications.
+- **Contact Information:** Easy access to my contact information.
+
+## Getting Started
+
+To view the website locally, follow these steps:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   ```
+
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd my_portfilo
+   ```
+
+3. **Open `index.html` in your preferred web browser.**
+
+## Usage
+
+Explore the different sections of the website to learn more about my professional background:
+
+- **About Me:** An introduction to who I am and what I do.
+- **Skills:** A detailed list of my technical skills.
+- **Projects:** A showcase of the projects I have worked on, including descriptions and technologies used.
+- **Certifications:** A list of my professional certifications with links to view them.
+
+## Contact
+
+If you have any questions or would like to get in touch, please reach out via email:
+
+- **Email:** [areenali98@gmail.com](mailto:areenali98@gmail.com)
+- **Phone:** [+962 791 560 686](tel:+962791560686)
+
+You can also find more information about me on my [portfolio website](https://areen612.github.io/).
+
