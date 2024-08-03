@@ -81,7 +81,6 @@ Explore the different sections of the website to learn more about my professiona
 If you have any questions or would like to get in touch, please reach out via email:
 
 - **Email:** [areenali98@gmail.com](mailto:areenali98@gmail.com)
-- **Phone:** [+962 791 560 686](tel:+962791560686)
 
 You can also find more information about me on my [portfolio website](https://areen612.github.io/).
 
