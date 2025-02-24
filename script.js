@@ -25,3 +25,10 @@ function showPopup(bool) {
     document.getElementById('popup').style.visibility = 'hidden'
   }
 }
+
+function toggleProject(element) {
+  let projectCard = element.parentElement;
+  let details = projectCard.querySelector(".project-details");
+  projectCard.classList.toggle("expanded");
+  details.style.display = details.style.display === "block" ? "none" : "block";
+}

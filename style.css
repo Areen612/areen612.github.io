@@ -316,6 +316,39 @@ h2 {
   }
 }
 
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-arrow {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+  color: #7600bc;
+}
+
+.expanded .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.project-details {
+  display: none;
+  margin-top: 10px;
+}
+
+.media-content {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.media-content img, .media-content video {
+  max-width: 250px;
+  border-radius: 5px;
+}
+
 /* Scroll to Top Button */
 
 .iconbutton {
