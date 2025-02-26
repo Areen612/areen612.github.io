@@ -345,7 +345,7 @@ h2 {
 }
 
 .media-content img, .media-content video {
-  max-width: 250px;
+  max-width: 100px;
   border-radius: 5px;
 }
 

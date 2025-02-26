@@ -29,6 +29,12 @@ function showPopup(bool) {
 function toggleProject(element) {
   let projectCard = element.parentElement;
   let details = projectCard.querySelector(".project-details");
-  projectCard.classList.toggle("expanded");
-  details.style.display = details.style.display === "block" ? "none" : "block";
+  let arrow = projectCard.querySelector(".dropdown-arrow i");
+  if (details.style.display === "block") {
+    details.style.display = "none";
+    projectCard.classList.remove("expanded");
+  } else {
+    details.style.display = "block";
+    projectCard.classList.add("expanded");
+  }
 }
