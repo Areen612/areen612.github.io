@@ -137,88 +137,136 @@
     </h2>
     <div style="clear:both;"></div>
     <div id="projects-container" class="projects-container">
-      <div class="project-card">
-        <h3>Scraping and extracting data using (Pyhton, Machine Learning)</h3>
-        <ul>
-          <li> Contributed to the implementation of an AI-driven Donor Matching and Extraction
-            program with LexisNexis (RELX Inc.) Leveraging Zyte for scraping donor PDFs, and
-            seamlessly integrating various AWS cloud services such as S3, EC2, and TextTract. The
-            solution excels in extracting text from images and post-processing to deliver valuable,
-            human-readable information.site integrated with chatbot for an automobile client using HTML, CSS, JavaScript
-            and IBM Watson Assistant</li>
-        </ul>
-      </div>
-      <div class="project-card">
-        <h3>Delivery and services App (Django, Flutter)</h3>
-        <ul>
-          <li>Successfully completed a freelance project involving the development of a mobile
-            application, (akin to Uber Eats), Utilizing Flutter for the frontend and Django for
-            backend APIs and administration panels. The app boasts integration with Google Maps
-            API, catering to both customers ordering services and drivers facilitating deliveries.</li>
-        </ul>
-      </div>
+      <!-- Scraping and Data Extraction Project -->
       <div class="project-card">
         <div class="project-header" onclick="toggleProject(this)">
-          <h3>Optimal Route API with Cost-Effective Fuel Stops (Django, AWS Locatiom Services)</h3>
+          <h3>Scraping and Extracting Data (Python, Machine Learning)</h3>
           <span class="dropdown-arrow">
             <i class="fa-solid fa-chevron-down"></i>
           </span>
         </div>
         <ul class="project-details" style="display: none;">
-          <li>The Optimal Route API is a Django-based application that calculates the optimal driving route
-             between any two locations within the USA. It enhances the route by identifying the most cost-effective 
-             fuel stops along the way, ensuring that drivers save money on fuel without deviating 
-             significantly from their path.</li>
-        <div class="media-content">
-          <!-- <img src="project1-image.jpg" alt="Project Image"> -->
-          <iframe width="560" height="315" 
-            src="https://drive.google.com/file/d/1sHNVjFjrPdqvWSs9DqRC5s-tk4BaKvtF/preview"
-            title="Optimal Route API with Cost-Effective Fuel Stops" 
-            frameborder="0" 
-            allow="autoplay; encrypted-media" 
-            allowfullscreen>
-          </iframe>
-          <!-- <video controls><source src="html_finalprojimages/optimal_routes.mov" type="video/mp4"></video> -->
+          <li>
+            Collaborated with a cross-functional team to develop a donor-matching solution.
+          </li>
+          <li> 
+            - Wrote AWS Lambda functions and unit tests and contributed to ML model development.
+          </li>
+          <li>
+            - Managed model version control using DVC and conducted EDA.
+          </li>
+          <li>
+            - Integrated the solution with AWS services (S3 for storage, Textract for image processing, and text extraction).
+          </li>
+          <li>
+            - Delivered accurate, human-readable donor-matching results.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Delivery and Services App -->
+      <div class="project-card">
+        <div class="project-header" onclick="toggleProject(this)">
+          <h3>Delivery and Services App (Django, Flutter)</h3>
+          <span class="dropdown-arrow">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
         </div>
+        <ul class="project-details" style="display: none;">
+          <li>
+            Successfully completed a freelance project involving the development of a mobile application (akin to Uber Eats). Utilized Flutter for the frontend and Django for backend APIs/administration panels, featuring integration with the Google Maps API for both customers and drivers.
+          </li>
         </ul>
       </div>
+
+      <!-- Optimal Route API Project -->
       <div class="project-card">
-        <h3>Graduation Project (Flutter, Firebase)</h3>
-        <ul>
-          <li> Developed an innovative Employment and training Mobile Application.</li>
+        <div class="project-header" onclick="toggleProject(this)">
+          <h3>Optimal Route API with Cost-Effective Fuel Stops (Django, AWS Location Services)</h3>
+          <span class="dropdown-arrow">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+        <ul class="project-details" style="display: none;">
+          <li>
+            A Django-based application that calculates the optimal driving route between any two locations in the USA. It identifies the most cost-effective fuel stops along the way, ensuring drivers save money on fuel without significant route deviations.
+          </li>
+          <div class="media-content">
+            <!-- Optional Image -->
+            <!-- <img src="project1-image.jpg" alt="Project Image"> -->
+
+            <!-- Embedded Video -->
+            <iframe
+              width="560"
+              height="315"
+              src="https://drive.google.com/file/d/1sHNVjFjrPdqvWSs9DqRC5s-tk4BaKvtF/preview"
+              title="Optimal Route API with Cost-Effective Fuel Stops"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen>
+            </iframe>
+          </div>
         </ul>
       </div>
+
+      <!-- Graduation Project -->
       <div class="project-card">
-        <h3>4 Stages Alzheimer Detection AI using (python)</h3>
-        <ul>
-          <li>Created a machine learning model capable of detecting early stages of Alzheimer's disease by analyzing
-            MRI brain scans.</li>
+        <div class="project-header" onclick="toggleProject(this)">
+          <h3>Graduation Project (Flutter, Firebase)</h3>
+          <span class="dropdown-arrow">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+        <ul class="project-details" style="display: none;">
+          <li>
+            Developed an innovative Employment and Training Mobile Application using Flutter (frontend) and Firebase (backend).
+          </li>
         </ul>
       </div>
+
+      <!-- 4 Stages Alzheimer Detection Project (Fixed) -->
       <div class="project-card">
-        <h3>Maze Game (assembly)</h3>
-        <ul>
-          <li>Created a maze game where players navigate through a 10x10 grid by pressing the arrow keys and collect
-            points.</li>
+        <div class="project-header" onclick="toggleProject(this)">
+          <h3>4 Stages Alzheimer Detection AI (Python)</h3>
+          <span class="dropdown-arrow">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+        <ul class="project-details" style="display: none;">
+          <li>
+            Created a machine learning model capable of detecting early stages of Alzheimer’s disease by analyzing MRI brain scans.
+          </li>
         </ul>
       </div>
+
+      <!-- Maze Game (Assembly) -->
       <div class="project-card">
-        <h3>Job Board API Application (Ruby on Rails)</h3>
-        <ul>
-          <li>Engineered a dynamic RESTful API using Ruby on Rails, designed to streamline the job posting and
-            application process. This application features comprehensive CRUD operations, enabling the admin to create,
-            read, update, and delete job postings. Additionally, it offers a seamless mechanism for job seekers to apply
-            for positions, fostering a user-friendly interface between companies and potential employees.</li>
+        <div class="project-header" onclick="toggleProject(this)">
+          <h3>Maze Game (Assembly Language)</h3>
+          <span class="dropdown-arrow">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+        <ul class="project-details" style="display: none;">
+          <li>
+            Developed a challenging maze game implemented in Assembly language. Players navigate a 10x10 grid with arrow keys, aiming to collect points while avoiding obstacles.
+          </li>
         </ul>
       </div>
+
+      <!-- Job Board API Application -->
       <div class="project-card">
-        <h3>Maze Game (Assembly Language)</h3>
-        <ul>
-          <li>Developed a challenging maze game implemented in Assembly language, offering players a thrilling
-            experience as they navigate a 10x10 grid. Utilizing arrow keys for movement, participants strive to collect
-            points while avoiding obstacles.</li>
+        <div class="project-header" onclick="toggleProject(this)">
+          <h3>Job Board API Application (Ruby on Rails)</h3>
+          <span class="dropdown-arrow">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+        <ul class="project-details" style="display: none;">
+          <li>
+            Engineered a dynamic RESTful API using Ruby on Rails to streamline the job posting and application process. Includes comprehensive CRUD operations for job postings and a seamless system for job seekers to apply for positions, bridging companies and potential employees.
+          </li>
         </ul>
-      </div>
       </div>
     </section>
   <div style="clear:both;"></div>
