@@ -1,86 +1,48 @@
-# AREEN ALBARGOTHY
+# Areen Albargothy — Portfolio
 
-**Software Engineer**  
-+962 791 560 686 | Amman, Jordan  
-[LinkedIn Profile](https://www.linkedin.com/in/areen-albargothy/)
-Sure, here is the actual `README.md` file:
+A responsive portfolio for Areen Albargothy, a software engineer based in Amman, Jordan.
 
-```markdown
-# Areen Albargothy's Portfolio
+[Visit the portfolio](https://areen612.github.io/)
 
-Welcome to my portfolio website! This website showcases my professional skills, projects, and certifications. It is built using HTML, CSS, and JavaScript.
+## Development
 
-## Table of Contents
+The site uses semantic HTML, CSS, and a small amount of JavaScript. There are no runtime dependencies, framework build steps, or environment variables. GitHub Pages can continue serving the repository root.
 
-- [About the Project](#about-the-project)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contact](#contact)
+Open `index.html` directly, or serve this directory with a local HTTP server:
 
-## About the Project
-
-This portfolio website is designed to highlight my expertise and experience as a software engineer. It includes sections for an introduction, skills, projects, and certifications. The site is fully responsive and provides a seamless experience across different devices and screen sizes.
-
-## Technologies Used
-
-- HTML
-- CSS
-- JavaScript
-
-## Project Structure
-
-```
-project-directory/
-│
-├── html_finalprojimages/       # Directory containing images used in the project
-├── script.js                   # JavaScript file for interactive elements
-├── style.css                   # CSS file for styling the website
-├── index.html                  # Main HTML file for the website
-└── README.md                   # This README file
+```sh
+python3 -m http.server 4173 --bind 127.0.0.1
 ```
 
-## Features
+Then open `http://127.0.0.1:4173/`.
 
-- **Responsive Design:** The website adapts to different screen sizes for an optimal viewing experience on all devices.
-- **Interactive Elements:** JavaScript is used to add interactivity to the website.
-- **Showcase of Skills and Projects:** Detailed sections that describe my skills and showcase my projects and certifications.
-- **Contact Information:** Easy access to my contact information.
+## Structure
 
-## Getting Started
+- `index.html`: introduction, seven project summaries, biography, skills, eleven distinct course certificates, and contact links.
+- `style.css`: theme tokens, component styling, responsive layouts, and reduced-motion support.
+- `script.js`: mobile navigation and the optional embedded project video.
+- `favicon.svg`: portfolio monogram.
+- `assets/fonts/`: self-hosted Manrope variable font and its SIL Open Font License.
+- `html_finalprojimages/`: original certificate images and retained reference assets.
 
-To view the website locally, follow these steps:
+## Content and behavior
 
-1. **Clone the repository:**
+- Project details use native `<details>` elements and remain accessible without JavaScript.
+- Navigation remains visible when JavaScript is disabled. With JavaScript, mobile visitors receive a menu with an expanded state, Escape-key support, and automatic closing after selecting a section.
+- The route diagram is a conceptual illustration, not a screenshot, real map, or live routing result.
+- The original Google Drive demo remains linked directly. Its embedded player loads only when the visitor selects **Play demo here**.
+- Certificates link to the original providers or an existing certificate image. The duplicate web-development entry has been consolidated. Course certificates are not represented as professional licenses or UI/UX certifications.
+- Typography is self-hosted; no font CDN or icon library is requested. Third-party content is contacted only when visitors follow a link or explicitly play the video.
+- Existing section anchors are retained, including `#recommendations` as an alias for the credentials section.
 
-   ```bash
-   git clone https://github.com/your-username/your-repository.git
-   ```
+## Review before merging
 
-2. **Navigate to the project directory:**
+Check the layout at narrow mobile, tablet, and desktop widths, plus 200% text zoom. Navigate with Tab, open and close the mobile menu with Enter and Escape, expand each project, and check contact and certificate links. Repeat navigation with JavaScript disabled and reduced motion enabled.
 
-   ```bash
-   cd my_portfilo
-   ```
-
-3. **Open `index.html` in your preferred web browser.**
-
-## Usage
-
-Explore the different sections of the website to learn more about my professional background:
-
-- **About Me:** An introduction to who I am and what I do.
-- **Skills:** A detailed list of my technical skills.
-- **Projects:** A showcase of the projects I have worked on, including descriptions and technologies used.
-- **Certifications:** A list of my professional certifications with links to view them.
+The redesign preserves GitHub Pages' existing static deployment structure. Merging into the Pages source branch makes the updated portfolio eligible for the repository's normal deployment; no new hosting service is needed.
 
 ## Contact
 
-If you have any questions or would like to get in touch, please reach out via email:
-
-- **Email:** [areenali98@gmail.com](mailto:areenali98@gmail.com)
-
-You can also find more information about me on my [portfolio website](https://areen612.github.io/).
-
+- [Email](mailto:areenali98@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/areen-albargothy/)
+- [GitHub](https://github.com/Areen612)

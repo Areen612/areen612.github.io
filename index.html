@@ -1,371 +1,811 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Areen Albargothy, a highly motivated software engineer.">
-  <title>Areen Albargothy - Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="./style.css" />
-  <script src="./script.js"></script>
-</head>
-
-<body>
-  <!-- Navigation Bar -->
-  <header>
-    <nav>
-      <div id="home">
-        <div class="profile_name">
-          Areen Albargothy
-          <div class="contact_info">
-            <img src="html_finalprojimages/envelope.png" alt="Email Icon" />
-            <a href="mailto:areenali98@gmail.com">areenali98@gmail.com</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101310" />
+    <meta
+      name="description"
+      content="Areen Albargothy is a software engineer in Amman, Jordan. Explore her work in web and mobile development, cloud services, and machine learning."
+    />
+    <title>Areen Albargothy — Software Engineer</title>
+    <link rel="canonical" href="https://areen612.github.io/" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="./assets/fonts/manrope-variable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="home">
+      <div class="shell header-inner">
+        <a class="brand" href="#home" aria-label="Areen Albargothy, home"
+          ><span class="brand-mark" aria-hidden="true">a<span>.</span></span
+          ><span
+            >Areen Albargothy<span class="brand-role"
+              >Software engineer</span
+            ></span
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          hidden
+        >
+          Menu <span aria-hidden="true">+</span>
+        </button>
+        <nav
+          class="navigation"
+          id="primary-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="#projects">Work</a><a href="#about-me">About</a
+          ><a href="#skills">Expertise</a
+          ><a href="#certificates-level-1">Credentials</a
+          ><a class="nav-contact" href="#contact"
+            >Let’s talk <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="tiny-cross" aria-hidden="true">✳</span> Software
+            engineer · Amman, Jordan
+          </p>
+          <h1 id="hero-title">
+            Thoughtful<br />design.<br /><span>Powerful code.</span>
+          </h1>
+          <p class="hero-description">
+            I’m Areen. I connect thoughtful interfaces with the systems behind
+            them—turning complex problems into software that makes sense.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects"
+              >Explore my work <span aria-hidden="true">↘</span></a
+            ><a
+              class="text-link"
+              href="https://github.com/Areen612"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub <span aria-hidden="true">↗</span></a
+            >
           </div>
-          <div style="clear:both;"></div>
-          <div class="contact_info">
-            <img src="html_finalprojimages/phone.png" alt="Phone Icon" />
-            <a href="tel:+962791560686">+962 791 560 686</a>
+        </div>
+        <div class="hero-aside">
+          <div
+            class="engineering-diagram"
+            role="img"
+            aria-label="My development toolkit: React and Flutter for interfaces, Django and REST APIs for application logic, and AWS and databases for infrastructure."
+          >
+            <div class="diagram-heading">
+              <span class="eyebrow">From interface to infrastructure</span
+              ><span aria-hidden="true">↗</span>
+            </div>
+            <div class="diagram-layer layer-interface">
+              <span class="layer-icon" aria-hidden="true">&lt;/&gt;</span>
+              <div>
+                <span class="layer-label">01 / THE EXPERIENCE</span
+                ><strong>Interfaces that connect.</strong
+                ><span class="layer-tools">React · Flutter</span>
+              </div>
+            </div>
+            <div class="diagram-connector" aria-hidden="true">
+              <span></span><span>interaction</span>
+            </div>
+            <div class="diagram-layer layer-logic">
+              <span class="layer-icon" aria-hidden="true">{ }</span>
+              <div>
+                <span class="layer-label">02 / THE LOGIC</span
+                ><strong>Systems that deliver.</strong
+                ><span class="layer-tools">Django · REST APIs</span>
+              </div>
+            </div>
+            <div class="diagram-connector" aria-hidden="true">
+              <span></span><span>integration</span>
+            </div>
+            <div class="diagram-layer layer-cloud">
+              <span class="layer-icon" aria-hidden="true">⌘</span>
+              <div>
+                <span class="layer-label">03 / THE FOUNDATION</span
+                ><strong>Built to work together.</strong
+                ><span class="layer-tools">AWS · Databases</span>
+              </div>
+            </div>
+            <div class="diagram-footer">
+              <span>Design-aware. Engineering-led.</span
+              ><span aria-hidden="true">[ a. ]</span>
+            </div>
+          </div>
+          <p class="aside-note">
+            <span aria-hidden="true">↳</span> The details matter. So does the
+            bigger picture.
+          </p>
+        </div>
+        <div class="hero-bottom">
+          <span>Web &amp; mobile development</span><span>Cloud &amp; APIs</span
+          ><span>Machine learning</span
+          ><a href="#projects" aria-label="Scroll to selected work"
+            >Scroll to explore <span aria-hidden="true">↓</span></a
+          >
+        </div>
+      </section>
+      <section
+        class="section work-section"
+        id="projects"
+        aria-labelledby="work-title"
+      >
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">01 / Selected work</p>
+              <h2 id="work-title">
+                Complex challenges.<br /><span class="muted"
+                  >Considered solutions.</span
+                >
+              </h2>
+            </div>
+            <p>
+              A selection of projects across<br />applications, data, and
+              infrastructure.
+            </p>
+          </div>
+          <article class="featured-project">
+            <div class="route-visual">
+              <div class="visual-topline">
+                <span>ROUTE OPTIMIZATION</span><span>01 / 07</span>
+              </div>
+              <svg
+                class="route-diagram"
+                viewBox="0 0 600 320"
+                role="img"
+                aria-labelledby="route-title route-description"
+              >
+                <title id="route-title">Route planning concept</title>
+                <desc id="route-description">
+                  A schematic route links a starting point to a destination
+                  through two fuel stops. It illustrates the project’s routing
+                  concept, not an actual map or live route.
+                </desc>
+                <defs>
+                  <pattern
+                    id="map-grid"
+                    width="32"
+                    height="32"
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <path
+                      d="M 32 0 L 0 0 0 32"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-opacity=".1"
+                    />
+                  </pattern>
+                </defs>
+                <rect width="600" height="320" fill="url(#map-grid)" />
+                <path
+                  d="M65 235 L155 235 Q185 235 185 205 L185 145 Q185 115 215 115 L345 115 Q375 115 375 85 L375 75 Q375 55 395 55 L535 55"
+                  fill="none"
+                  stroke="#23422b"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M65 235 L100 155 L290 215 L470 155 L535 55"
+                  fill="none"
+                  stroke="#23422b"
+                  stroke-opacity=".22"
+                  stroke-width="2"
+                  stroke-dasharray="5 7"
+                />
+                <g fill="#23422b">
+                  <circle cx="65" cy="235" r="8" />
+                  <circle cx="250" cy="115" r="7" />
+                  <circle cx="420" cy="55" r="7" />
+                  <circle cx="535" cy="55" r="8" />
+                </g>
+                <g fill="#e0f4ad" stroke="#23422b" stroke-width="2">
+                  <circle cx="65" cy="235" r="16" />
+                  <circle cx="535" cy="55" r="16" />
+                </g>
+                <g fill="#23422b">
+                  <circle cx="65" cy="235" r="5" />
+                  <circle cx="535" cy="55" r="5" />
+                </g>
+                <g
+                  fill="#23422b"
+                  font-family="Manrope, sans-serif"
+                  font-size="15"
+                  font-weight="700"
+                >
+                  <text x="39" y="277">START</text>
+                  <text x="220" y="151">Fuel stop</text>
+                  <text x="390" y="94">Fuel stop</text>
+                  <text x="458" y="22">DESTINATION</text>
+                </g>
+              </svg>
+              <div class="visual-bottomline">
+                <span class="visual-pill">Route + fuel stops</span
+                ><span>Concept diagram ↗</span>
+              </div>
+            </div>
+            <div class="featured-copy">
+              <p class="eyebrow">Backend development · Routing</p>
+              <h3>A smarter way<br />from A to B.</h3>
+              <p>
+                A route-planning API that finds cost-effective fuel stops along
+                a driving route in the USA, keeping unnecessary detours in mind.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Django</li>
+                <li>AWS Location</li>
+                <li>REST API</li>
+              </ul>
+              <details class="project-details">
+                <summary>
+                  Inside the project <span aria-hidden="true">+</span>
+                </summary>
+                <div class="details-content">
+                  <p>
+                    The application calculates an optimal driving route between
+                    two US locations, then identifies fuel stops along the way
+                    to help drivers reduce fuel costs without significant route
+                    deviations.
+                  </p>
+                  <a
+                    class="text-link"
+                    href="https://drive.google.com/file/d/1sHNVjFjrPdqvWSs9DqRC5s-tk4BaKvtF/view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Watch the project demo <span aria-hidden="true">↗</span></a
+                  ><button
+                    class="text-link inline-demo-button"
+                    type="button"
+                    aria-controls="route-demo"
+                    hidden
+                  >
+                    Play demo here <span aria-hidden="true">▷</span>
+                  </button>
+                  <div class="video-container" id="route-demo" hidden></div>
+                </div>
+              </details>
+            </div>
+          </article>
+          <div class="project-grid">
+            <article class="project-tile">
+              <div class="tile-header">
+                <span class="eyebrow">02 / Mobile &amp; backend</span
+                ><span class="project-symbol" aria-hidden="true">↗</span>
+              </div>
+              <h3>Delivery, connected.</h3>
+              <p>
+                A freelance delivery and services app connecting customers and
+                drivers through mobile experiences and location-aware services.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Flutter</li>
+                <li>Django</li>
+                <li>Google Maps</li>
+              </ul>
+              <details class="project-details">
+                <summary>
+                  Inside the project <span aria-hidden="true">+</span>
+                </summary>
+                <div class="details-content">
+                  <p>
+                    Built the mobile frontend with Flutter and the backend APIs
+                    and administration panels with Django. Integrated Google
+                    Maps for both customers and drivers.
+                  </p>
+                </div>
+              </details>
+            </article>
+            <article class="project-tile">
+              <div class="tile-header">
+                <span class="eyebrow">03 / Data &amp; machine learning</span
+                ><span class="project-symbol" aria-hidden="true">⌁</span>
+              </div>
+              <h3>Data with a purpose.</h3>
+              <p>
+                A donor-matching solution that brings data extraction, machine
+                learning, and cloud services together to produce readable
+                results.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Python</li>
+                <li>AWS Lambda</li>
+                <li>DVC</li>
+              </ul>
+              <details class="project-details">
+                <summary>
+                  Inside the project <span aria-hidden="true">+</span>
+                </summary>
+                <div class="details-content">
+                  <p>
+                    Collaborated with a cross-functional team, wrote Lambda
+                    functions and unit tests, and contributed to model
+                    development and exploratory data analysis. Used DVC for
+                    model versioning, S3 for storage, and Textract for image and
+                    text extraction.
+                  </p>
+                </div>
+              </details>
+            </article>
+          </div>
+          <div class="project-archive">
+            <div class="archive-heading">
+              <h3>More explorations</h3>
+              <span class="eyebrow">A little more of what I build</span>
+            </div>
+            <details class="archive-project">
+              <summary>
+                <span class="archive-number">04</span
+                ><span class="archive-name">Employment &amp; training app</span
+                ><span class="archive-tech">Flutter · Firebase</span
+                ><span class="archive-plus" aria-hidden="true">+</span>
+              </summary>
+              <div class="archive-content">
+                <p>
+                  My graduation project: a mobile application for employment and
+                  training, built with a Flutter frontend and Firebase backend.
+                </p>
+              </div>
+            </details>
+            <details class="archive-project">
+              <summary>
+                <span class="archive-number">05</span
+                ><span class="archive-name"
+                  >Alzheimer’s stage classification</span
+                ><span class="archive-tech">Python · Machine learning</span
+                ><span class="archive-plus" aria-hidden="true">+</span>
+              </summary>
+              <div class="archive-content">
+                <p>
+                  A machine learning project exploring the classification of
+                  four stages of Alzheimer’s disease from MRI brain scans. Built
+                  as a Python machine learning exploration.
+                </p>
+              </div>
+            </details>
+            <details class="archive-project">
+              <summary>
+                <span class="archive-number">06</span
+                ><span class="archive-name"
+                  >A maze, built from the ground up</span
+                ><span class="archive-tech">Assembly</span
+                ><span class="archive-plus" aria-hidden="true">+</span>
+              </summary>
+              <div class="archive-content">
+                <p>
+                  A maze game written in Assembly. Players navigate a 10 × 10
+                  grid with the arrow keys, collecting points while avoiding
+                  obstacles.
+                </p>
+              </div>
+            </details>
+            <details class="archive-project">
+              <summary>
+                <span class="archive-number">07</span
+                ><span class="archive-name">Job board API</span
+                ><span class="archive-tech">Ruby on Rails · REST API</span
+                ><span class="archive-plus" aria-hidden="true">+</span>
+              </summary>
+              <div class="archive-content">
+                <p>
+                  A RESTful API connecting companies and job seekers, with
+                  create, read, update, and delete operations for job postings
+                  and a system for applying to positions.
+                </p>
+              </div>
+            </details>
           </div>
         </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
-          <a class="topmenu" href="#skills">Skills</a>
-          <a class="topmenu" href="#projects">Projects</a>
-          <a class="topmenu" href="#recommendations">Certifications</a>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Main Content -->
-  <main>
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image" alt="Animated profile image" width="460px" height="460px" />
-      </div>
-      <div>
-        <h1>
-          Hi, I'm Areen Albargothy!<img src="html_finalprojimages/waving-hand-sign-emoji-2048x2048-r71rstzv.png" width="60px" alt="Waving Hand Emoji" />
-        </h1>
-        <p>
-          A highly motivated software engineer with a passion for innovative technologies. Seeking a
-          challenging position to apply my expertise in transforming business goals into streamlined
-          system designs. Strong analytical thinking and creative problem-solving skills drive my
-          focus on enhancing automated productivity. As a collaborative team player with excellent
-          communication skills, I am excited to join a forward-thinking organization and make a
-          meaningful impact in shaping its technological landscape.
-        </p>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-    <div style="clear:both;"></div>
-
-      <div class="all_skills">
-      <div class="skill">
-        <img src="html_finalprojimages/3721643.png" />
-        <h6>Programming Languages</h6>
-        <p>C - C++ - C# - Python - TCL</p>
-      </div>
-      <div class="skill">
-        <img src="html_finalprojimages/5424570.png" />
-        <h6>Frameworks</h6>
-        <p>Django - Flask - React - Angular - ASP.NET</p>
-      </div>
-      <div class="skill">
-        <img src="html_finalprojimages/cloud.png" />
-        <h6>Cloud Services</h6>
-        <p>AWS (Lambda - S3 - EC2 - SNS)</p>
-      </div>
-      <div class="skill">
-        <img src="html_finalprojimages/6472004.png" />
-        <h6>Databases</h6>
-        <p>MySQL - PostgreSQL - Firebase</p>
-      </div>
-      <div class="skill">
-        <img src="html_finalprojimages/4774569.png" />
-        <h6>Networking Protocols</h6>
-        <p>Restful APIs and WebSocket</p>
-      </div>
-      <div class="skill">
-        <img src="html_finalprojimages/flat-app-development-icon-app-coding-and-app-settings-concept-vector.jpg" />
-        <h6>Mobile Development</h6>
-        <p>Flutter- Dart</p>
-      </div>
-      <div class="skill">
-        <img src="html_finalprojimages/1597554.webp" />
-        <h6>Tools</h6>
-        <p>Git - GitHub - GitLab - Bitbucket - Docker - Jenkins - Azure DevOps</p>
-      </div>
-      <div class="skill">
-        <img src="html_finalprojimages/oop.png" />
-        <h6>Programming Paradigms</h6>
-        <p>Object-oriented programming.</p>
-      </div>
-      <div class="skill">
-        <img src="html_finalprojimages/7690595.png" alt=" Data Structures & Algorithms Icon" />
-        <h6>Data Structures & Algorithms</h6>
-        <p>Expertise in optimizing solutions and enhancing performance.</p>
-      </div>
-      <div class="skill">
-        <img src="html_finalprojimages/unit_test.png" alt=" Unit Testing Icon" />
-        <h6>Unit Testing</h6>
-        <p>Proficient in writing and maintaining test cases to ensure code reliability.</p>
-      </div>
-      <div class="skill">
-        <img src="html_finalprojimages/1458497.png"" alt=" Clean Code & SOLID Principles Icon" />
-        <h6>Clean Code & SOLID Principles</h6>
-        <p>Committed to writing maintainable, scalable, and efficient code following best practices.</p>
-      </div>
-      <div class="skill">
-        <img src="html_finalprojimages/images.jpeg" />
-        <h6>Design Patterns</h6>
-        <p>MTV - MVC</p>
-      </div>
-      </ul>
-      </div>
-    </section>
-
-    <!-- Projects -->
-  <section class="projects" id="projects">
-    <h2>
-      Projects
-    </h2>
-    <div style="clear:both;"></div>
-    <div id="projects-container" class="projects-container">
-      <!-- Scraping and Data Extraction Project -->
-      <div class="project-card">
-        <div class="project-header" onclick="toggleProject(this)">
-          <h3>Scraping and Extracting Data (Python, Machine Learning)</h3>
-          <span class="dropdown-arrow">
-            <i class="fa-solid fa-chevron-down"></i>
-          </span>
-        </div>
-        <ul class="project-details" style="display: none;">
-          <li>
-            Collaborated with a cross-functional team to develop a donor-matching solution.
-          </li>
-          <li> 
-            - Wrote AWS Lambda functions and unit tests and contributed to ML model development.
-          </li>
-          <li>
-            - Managed model version control using DVC and conducted EDA.
-          </li>
-          <li>
-            - Integrated the solution with AWS services (S3 for storage, Textract for image processing, and text extraction).
-          </li>
-          <li>
-            - Delivered accurate, human-readable donor-matching results.
-          </li>
-        </ul>
-      </div>
-
-      <!-- Delivery and Services App -->
-      <div class="project-card">
-        <div class="project-header" onclick="toggleProject(this)">
-          <h3>Delivery and Services App (Django, Flutter)</h3>
-          <span class="dropdown-arrow">
-            <i class="fa-solid fa-chevron-down"></i>
-          </span>
-        </div>
-        <ul class="project-details" style="display: none;">
-          <li>
-            Successfully completed a freelance project involving the development of a mobile application (akin to Uber Eats). Utilized Flutter for the frontend and Django for backend APIs/administration panels, featuring integration with the Google Maps API for both customers and drivers.
-          </li>
-        </ul>
-      </div>
-
-      <!-- Optimal Route API Project -->
-      <div class="project-card">
-        <div class="project-header" onclick="toggleProject(this)">
-          <h3>Optimal Route API with Cost-Effective Fuel Stops (Django, AWS Location Services)</h3>
-          <span class="dropdown-arrow">
-            <i class="fa-solid fa-chevron-down"></i>
-          </span>
-        </div>
-        <ul class="project-details" style="display: none;">
-          <li>
-            A Django-based application that calculates the optimal driving route between any two locations in the USA. It identifies the most cost-effective fuel stops along the way, ensuring drivers save money on fuel without significant route deviations.
-          </li>
-          <div class="media-content">
-            <!-- Optional Image -->
-            <!-- <img src="project1-image.jpg" alt="Project Image"> -->
-
-            <!-- Embedded Video -->
-            <iframe
-              width="560"
-              height="315"
-              src="https://drive.google.com/file/d/1sHNVjFjrPdqvWSs9DqRC5s-tk4BaKvtF/preview"
-              title="Optimal Route API with Cost-Effective Fuel Stops"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen>
-            </iframe>
+      </section>
+      <section
+        class="section about-section"
+        id="about-me"
+        aria-labelledby="about-title"
+      >
+        <div class="shell about-layout">
+          <div>
+            <p class="eyebrow">02 / A little about me</p>
+            <h2 id="about-title">
+              Curious by nature.<br /><span class="muted"
+                >Practical by design.</span
+              >
+            </h2>
+            <div class="about-location">
+              <span class="location-symbol" aria-hidden="true">◎</span
+              ><span
+                >Based in Amman, Jordan<br /><span class="muted"
+                  >Building across web, mobile, and cloud.</span
+                ></span
+              >
+            </div>
           </div>
-        </ul>
-      </div>
-
-      <!-- Graduation Project -->
-      <div class="project-card">
-        <div class="project-header" onclick="toggleProject(this)">
-          <h3>Graduation Project (Flutter, Firebase)</h3>
-          <span class="dropdown-arrow">
-            <i class="fa-solid fa-chevron-down"></i>
-          </span>
+          <div class="about-copy">
+            <p class="about-lead">
+              I enjoy the space where a real-world problem becomes a well-built
+              piece of software.
+            </p>
+            <p>
+              My work spans mobile applications, backend APIs, cloud services,
+              and machine learning. I bring analytical thinking and creative
+              problem-solving to turning business needs into clear system
+              designs.
+            </p>
+            <p>
+              I value the parts that make a project work well: thoughtful
+              interfaces, maintainable code, reliable tests, and clear
+              communication with the people building alongside me.
+            </p>
+            <a
+              class="text-link"
+              href="https://www.linkedin.com/in/areen-albargothy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Find me on LinkedIn <span aria-hidden="true">↗</span></a
+            >
+          </div>
         </div>
-        <ul class="project-details" style="display: none;">
-          <li>
-            Developed an innovative Employment and Training Mobile Application using Flutter (frontend) and Firebase (backend).
-          </li>
-        </ul>
-      </div>
-
-      <!-- 4 Stages Alzheimer Detection Project (Fixed) -->
-      <div class="project-card">
-        <div class="project-header" onclick="toggleProject(this)">
-          <h3>4 Stages Alzheimer Detection AI (Python)</h3>
-          <span class="dropdown-arrow">
-            <i class="fa-solid fa-chevron-down"></i>
-          </span>
+      </section>
+      <section
+        class="section skills-section"
+        id="skills"
+        aria-labelledby="skills-title"
+      >
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">03 / Tools of the trade</p>
+              <h2 id="skills-title">
+                The right tools.<br /><span class="muted"
+                  >A solid foundation.</span
+                >
+              </h2>
+            </div>
+            <p>From the first interaction<br />to the services behind it.</p>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-group">
+              <div class="skill-heading">
+                <span>01</span>
+                <h3>Web &amp; mobile</h3>
+              </div>
+              <ul class="skill-list">
+                <li>React</li>
+                <li>Angular</li>
+                <li>Flutter</li>
+                <li>Dart</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </article>
+            <article class="skill-group">
+              <div class="skill-heading">
+                <span>02</span>
+                <h3>Backend &amp; APIs</h3>
+              </div>
+              <ul class="skill-list">
+                <li>Python</li>
+                <li>Django</li>
+                <li>Flask</li>
+                <li>ASP.NET</li>
+                <li>C#</li>
+                <li>REST APIs</li>
+                <li>WebSocket</li>
+              </ul>
+            </article>
+            <article class="skill-group">
+              <div class="skill-heading">
+                <span>03</span>
+                <h3>Cloud &amp; data</h3>
+              </div>
+              <ul class="skill-list">
+                <li>AWS Lambda</li>
+                <li>S3</li>
+                <li>EC2</li>
+                <li>SNS</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>Firebase</li>
+              </ul>
+            </article>
+            <article class="skill-group">
+              <div class="skill-heading">
+                <span>04</span>
+                <h3>Development workflow</h3>
+              </div>
+              <ul class="skill-list">
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>GitLab</li>
+                <li>Bitbucket</li>
+                <li>Docker</li>
+                <li>Jenkins</li>
+                <li>Azure DevOps</li>
+              </ul>
+            </article>
+            <article class="skill-group">
+              <div class="skill-heading">
+                <span>05</span>
+                <h3>Engineering foundations</h3>
+              </div>
+              <ul class="skill-list">
+                <li>C</li>
+                <li>C++</li>
+                <li>TCL</li>
+                <li>OOP</li>
+                <li>Data structures</li>
+                <li>Algorithms</li>
+                <li>MVC</li>
+                <li>MTV</li>
+              </ul>
+            </article>
+            <article class="skill-group">
+              <div class="skill-heading">
+                <span>06</span>
+                <h3>Quality &amp; maintainability</h3>
+              </div>
+              <ul class="skill-list">
+                <li>Unit testing</li>
+                <li>Clean code</li>
+                <li>SOLID principles</li>
+                <li>Design patterns</li>
+              </ul>
+            </article>
+          </div>
         </div>
-        <ul class="project-details" style="display: none;">
-          <li>
-            Created a machine learning model capable of detecting early stages of Alzheimer’s disease by analyzing MRI brain scans.
-          </li>
-        </ul>
-      </div>
-
-      <!-- Maze Game (Assembly) -->
-      <div class="project-card">
-        <div class="project-header" onclick="toggleProject(this)">
-          <h3>Maze Game (Assembly Language)</h3>
-          <span class="dropdown-arrow">
-            <i class="fa-solid fa-chevron-down"></i>
-          </span>
+      </section>
+      <section
+        class="section credentials-section"
+        id="certificates-level-1"
+        aria-labelledby="credentials-title"
+      >
+        <span
+          class="anchor-alias"
+          id="recommendations"
+          aria-hidden="true"
+        ></span>
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">04 / Always learning</p>
+              <h2 id="credentials-title">
+                Curiosity,<br /><span class="muted">with credentials.</span>
+              </h2>
+            </div>
+            <p>
+              Course certificates and continued learning<br />across
+              engineering, cloud, and collaboration.
+            </p>
+          </div>
+          <div class="credential-featured">
+            <a
+              class="credential-card"
+              href="https://coursera.org/share/cfc6ada76f9882ed1367ab375e91e0d3"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><div class="credential-image">
+                <img
+                  src="./html_finalprojimages/CERTIFICATE_LANDING_PAGE~UCSUG7CDCF9E.jpeg"
+                  alt="Python for Data Science, AI &amp; Development — certificate awarded to Areen Albargothy"
+                  loading="lazy"
+                  decoding="async"
+                  width="1200"
+                  height="928"
+                />
+              </div>
+              <div class="credential-card-copy">
+                <p class="eyebrow">IBM · Coursera</p>
+                <h3>Python for Data Science, AI &amp; Development</h3>
+                <span class="credential-action"
+                  >View certificate <span aria-hidden="true">↗</span></span
+                >
+              </div></a
+            >
+            <a
+              class="credential-card"
+              href="https://coursera.org/share/2b4ac68c0b594b54fd874ff6cab708ec"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><div class="credential-image">
+                <img
+                  src="./html_finalprojimages/CERTIFICATE_LANDING_PAGE~FQD4XMM7XT3T.jpeg"
+                  alt="Django Application Development with SQL and Databases — certificate awarded to Areen Albargothy"
+                  loading="lazy"
+                  decoding="async"
+                  width="1200"
+                  height="928"
+                />
+              </div>
+              <div class="credential-card-copy">
+                <p class="eyebrow">IBM · Coursera</p>
+                <h3>Django Application Development with SQL and Databases</h3>
+                <span class="credential-action"
+                  >View certificate <span aria-hidden="true">↗</span></span
+                >
+              </div></a
+            >
+            <a
+              class="credential-card"
+              href="./html_finalprojimages/%E2%80%8EMicrosoft-Learn-AI-Skills-Challenge-Certificate-of-completion.jpeg"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><div class="credential-image">
+                <img
+                  src="./html_finalprojimages/‎Microsoft-Learn-AI-Skills-Challenge-Certificate-of-completion.jpeg"
+                  alt="AI Skills Challenge — certificate awarded to Areen Albargothy"
+                  loading="lazy"
+                  decoding="async"
+                  width="1200"
+                  height="928"
+                />
+              </div>
+              <div class="credential-card-copy">
+                <p class="eyebrow">Microsoft Learn</p>
+                <h3>AI Skills Challenge</h3>
+                <span class="credential-action"
+                  >View certificate <span aria-hidden="true">↗</span></span
+                >
+              </div></a
+            >
+          </div>
+          <div class="credential-list" id="certificates-level-2">
+            <a
+              class="credential-row"
+              href="https://coursera.org/share/01cfa011dcafb199c16fa002a293cdad"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="credential-provider">Coursera</span
+              ><span class="credential-name"
+                >Introduction to Cloud Computing</span
+              ><span class="credential-row-action"
+                >View <span aria-hidden="true">↗</span></span
+              ></a
+            >
+            <a
+              class="credential-row"
+              href="https://coursera.org/share/19f903a04875993af42eff047aaaedbc"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="credential-provider">Coursera</span
+              ><span class="credential-name"
+                >Introduction to Web Development with HTML, CSS,
+                JavaScript</span
+              ><span class="credential-row-action"
+                >View <span aria-hidden="true">↗</span></span
+              ></a
+            >
+            <a
+              class="credential-row"
+              href="https://coursera.org/share/82e2869e2bbc0e049d70bfad5d8e256d"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="credential-provider">Coursera</span
+              ><span class="credential-name"
+                >Getting Started with Git and GitHub</span
+              ><span class="credential-row-action"
+                >View <span aria-hidden="true">↗</span></span
+              ></a
+            >
+            <a
+              class="credential-row"
+              href="https://www.udemy.com/certificate/UC-2b43e772-7bb9-47ee-91e3-894270b8d860/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="credential-provider">Udemy</span
+              ><span class="credential-name">Clean Code</span
+              ><span class="credential-row-action"
+                >View <span aria-hidden="true">↗</span></span
+              ></a
+            >
+            <a
+              class="credential-row"
+              href="https://www.udemy.com/certificate/UC-952fa884-34d1-4f2f-8014-2b44062217f6/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="credential-provider">Udemy</span
+              ><span class="credential-name">Introduction to using Git</span
+              ><span class="credential-row-action"
+                >View <span aria-hidden="true">↗</span></span
+              ></a
+            >
+            <a
+              class="credential-row"
+              href="https://www.udemy.com/certificate/UC-866affa1-d7c5-4ca7-b05c-7679a229f725/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="credential-provider">Udemy</span
+              ><span class="credential-name">Jira for Beginners</span
+              ><span class="credential-row-action"
+                >View <span aria-hidden="true">↗</span></span
+              ></a
+            >
+            <a
+              class="credential-row"
+              href="./html_finalprojimages/unnamed.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="credential-provider">Udemy</span
+              ><span class="credential-name"
+                >Write Better Emails: Tactics for Smarter Team
+                Communication</span
+              ><span class="credential-row-action"
+                >View <span aria-hidden="true">↗</span></span
+              ></a
+            >
+            <a
+              class="credential-row"
+              href="https://www.udemy.com/certificate/UC-02efd974-2de3-4ac2-8661-805a21f7b1ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="credential-provider">Udemy</span
+              ><span class="credential-name"
+                >Time Management Mastery: Do More, Stress Less</span
+              ><span class="credential-row-action"
+                >View <span aria-hidden="true">↗</span></span
+              ></a
+            >
+          </div>
         </div>
-        <ul class="project-details" style="display: none;">
-          <li>
-            Developed a challenging maze game implemented in Assembly language. Players navigate a 10x10 grid with arrow keys, aiming to collect points while avoiding obstacles.
-          </li>
-        </ul>
-      </div>
-
-      <!-- Job Board API Application -->
-      <div class="project-card">
-        <div class="project-header" onclick="toggleProject(this)">
-          <h3>Job Board API Application (Ruby on Rails)</h3>
-          <span class="dropdown-arrow">
-            <i class="fa-solid fa-chevron-down"></i>
-          </span>
+      </section>
+      <section
+        class="contact-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="shell">
+          <p class="eyebrow">Let’s connect</p>
+          <div class="contact-heading">
+            <h2 id="contact-title">
+              Have something<br />in mind<span>?</span>
+            </h2>
+            <a
+              class="contact-arrow"
+              href="mailto:areenali98@gmail.com"
+              aria-label="Email Areen"
+              ><span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="contact-bottom">
+            <a class="email-link" href="mailto:areenali98@gmail.com"
+              >areenali98@gmail.com</a
+            >
+            <div>
+              <a
+                href="https://www.linkedin.com/in/areen-albargothy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn ↗</a
+              ><a
+                href="https://github.com/Areen612"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub ↗</a
+              ><a href="tel:+962791560686">+962&nbsp;791&nbsp;560&nbsp;686</a>
+            </div>
+          </div>
         </div>
-        <ul class="project-details" style="display: none;">
-          <li>
-            Engineered a dynamic RESTful API using Ruby on Rails to streamline the job posting and application process. Includes comprehensive CRUD operations for job postings and a seamless system for job seekers to apply for positions, bridging companies and potential employees.
-          </li>
-        </ul>
-      </div>
-    </section>
-  <div style="clear:both;"></div>
-
-  <section id="certificates-level-1">
-    <h2>Certifications</h2>
-    <div style="clear:both;"></div>
-    <div class="certificates-container">
-      <div class="certificate-card">
-        <a href="https://coursera.org/share/cfc6ada76f9882ed1367ab375e91e0d3" target="_blank">
-          <img src="html_finalprojimages/CERTIFICATE_LANDING_PAGE~UCSUG7CDCF9E.jpeg" alt="Certificate 2 Description" />
-        </a>
-        <p>Python for Data Science, AI & Development</p>
-      </div>
-      <div class="certificate-card">
-        <a href="https://coursera.org/share/01cfa011dcafb199c16fa002a293cdad" target="_blank">
-          <img src="html_finalprojimages/CERTIFICATE_LANDING_PAGE~65Y5FH25LKZW.jpeg" alt="Certificate 2 Description" />
-        </a>
-        <p>Introduction to Cloud Computing</p>
-      </div>
-      <div class="certificate-card">
-        <a href="https://coursera.org/share/2b4ac68c0b594b54fd874ff6cab708ec" target="_blank">
-          <img src="html_finalprojimages/CERTIFICATE_LANDING_PAGE~FQD4XMM7XT3T.jpeg" alt="Certificate 2 Description" />
-        </a>
-        <p>Django Application Development with SQL and Databases</p>
-      </div>
-      <div class="certificate-card">
-        <a href="https://coursera.org/share/19f903a04875993af42eff047aaaedbc" target="_blank">
-          <img src="html_finalprojimages/CERTIFICATE_LANDING_PAGE~FGYKEDKMH4YC.jpeg" alt="Certificate 2 Description" />
-        </a>
-        <p>Introduction to Web Development with HTML, CSS, JavaScript</p>
-      </div>
-      <div class="certificate-card">
-        <a href="https://coursera.org/share/82e2869e2bbc0e049d70bfad5d8e256d" target="_blank">
-          <img src="html_finalprojimages/CERTIFICATE_LANDING_PAGE~FKF8DTV8ZPYK.jpeg" alt="Certificate 2 Description" />
-        </a>
-        <p>Getting Started with Git and GitHub</p>
-      </div>
-      <div class="certificate-card">
-        <a href="link_to_certificate_1" target="_blank">
-          <img src="html_finalprojimages/AI-Skills-Challenge-badge-EN-US.png" alt="Certificate 1 Description" />
-        </a>
-        <p>Microsoft AI Skills Challenge</p>
-      </div>
-    </div>
-  </section>
-  
-  <section id="certificates-level-2">
-    <div style="clear:both;"></div>
-    <div class="certificates-container">
-      <div class="certificate-card">
-        <a href="ude.my/UC-a410aa8b-0bOb-44f5-89d5-f0243e7ce2a3" target="_blank">
-          <img src="html_finalprojimages/unnamed.jpg" alt="Certificate 2 Description" />
-        </a>
-        <p>Write Better Emails: Tactics for Smarter Team Communication</p>
-      </div>
-      <div class="certificate-card">
-        <a href="https://www.udemy.com/certificate/UC-2b43e772-7bb9-47ee-91e3-894270b8d860/" target="_blank">
-          <img src="html_finalprojimages/unnamed (2).jpg" alt="Certificate 2 Description" />
-        </a>
-        <p>Clean Code</p>
-      </div>
-      <div class="certificate-card">
-        <a href="ude.my/UC-952fa884-34d1-4f2f-8014-2b44062217f6" target="_blank">
-          <img src="html_finalprojimages/UC-952fa884-34d1-4f2f-8014-2b44062217f6.jpg" alt="Certificate 2 Description" />
-        </a>
-        <p>Introduction to using Git</p>
-      </div>
-      <div class="certificate-card">
-        <a href="ude.my/UC-866affa1-d7c5-4ca7-b05c-7679a229f725" target="_blank">
-          <img src="html_finalprojimages/UC-866affa1-d7c5-4ca7-b05c-7679a229f725.jpg" alt="Certificate 2 Description" />
-        </a>
-        <p>Jira for Beginners - Detailed Course to Get Started in Jira</p>
-      </div>
-      <div class="certificate-card">
-        <a href="ude.my/UC-a410aa8b-0bOb-44f5-89d5-f0243e7ce2a3" target="_blank">
-          <img src="html_finalprojimages/UC-02efd974-2de3-4ac2-8661-805a21f7b1ca.jpg" alt="Certificate 2 Description" />
-        </a>
-        <p>Time Management Mastery: Do More, Stress Less</p>
-      </div>
-      <div class="certificate-card">
-        <a href="https://coursera.org/share/19f903a04875993af42eff047aaaedbc" target="_blank">
-          <img src="html_finalprojimages/rocket_code.png" alt="Certificate 2 Description" />
-        </a>
-        <p>Introduction to Web Development</p>
-      </div>
-    </div>
-  </section>
-  
-  <div style="clear:both;"></div>
-
-
-  <div class="iconbutton">
-    <a href="#home">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    </a>
-  </div>
-</body>
-
+      </section>
+    </main>
+    <footer class="site-footer shell">
+      <a class="footer-signature" href="#home"
+        >Areen Albargothy<span>Software engineer · Amman, Jordan</span></a
+      ><a class="back-top" href="#home"
+        >Back to top <span aria-hidden="true">↑</span></a
+      >
+    </footer>
+  </body>
 </html>
