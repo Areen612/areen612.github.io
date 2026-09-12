@@ -18,7 +18,7 @@ Then open `http://127.0.0.1:4173/`.
 
 ## Structure
 
-- `index.html`: introduction, seven project summaries, biography, skills, eleven distinct course certificates, and contact links.
+- `index.html`: introduction, seven project summaries, biography, skills, one AWS certification, eleven course certificates, and contact links.
 - `style.css`: theme tokens, component styling, responsive layouts, and reduced-motion support.
 - `script.js`: mobile navigation and the optional embedded project video.
 - `favicon.svg`: portfolio monogram.
@@ -31,7 +31,10 @@ Then open `http://127.0.0.1:4173/`.
 - Navigation remains visible when JavaScript is disabled. With JavaScript, mobile visitors receive a menu with an expanded state, Escape-key support, and automatic closing after selecting a section.
 - The route diagram is a conceptual illustration, not a screenshot, real map, or live routing result.
 - The original Google Drive demo remains linked directly. Its embedded player loads only when the visitor selects **Play demo here**.
-- Certificates link to the original providers or an existing certificate image. The duplicate web-development entry has been consolidated. Course certificates are not represented as professional licenses or UI/UX certifications.
+- AWS Certified AI Practitioner is the first of three featured credentials, followed by the IBM Python and Django courses. Microsoft Learn AI Skills Challenge appears in the smaller list. The AWS card links to the official verification portal and includes the validation number and validity dates.
+- The AWS image is rendered directly from the supplied certificate PDF at 1980 × 1530 pixels and optimized as a lossless WebP (about 75 KiB). Certificate artwork retains its issuer's original colors.
+- Certificates link to the original providers or an existing certificate image. Course certificates are not represented as professional licenses or UI/UX certifications.
+- The theme uses deep navy backgrounds, light-gray body text, and a sky-blue accent (`#7dd3fc`). Focus, hover, selection, diagrams, and the favicon follow the same palette.
 - Typography is self-hosted; no font CDN or icon library is requested. Third-party content is contacted only when visitors follow a link or explicitly play the video.
 - Existing section anchors are retained, including `#recommendations` as an alias for the credentials section.
 
