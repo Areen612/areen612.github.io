@@ -1,5 +1,72 @@
 "use strict";
 
+// Offer a visible choice instead of relying on a configured mailto handler.
+// Without dialog support or JavaScript, the original links still open Gmail.
+const emailDialog = document.querySelector("#email-dialog");
+if (emailDialog && typeof emailDialog.showModal === "function") {
+  const emailAddress = emailDialog.querySelector(".email-address");
+  const emailStatus = emailDialog.querySelector(".email-status");
+  let emailOpener;
+  document.querySelectorAll("[data-email-options]").forEach((link) => {
+    link.setAttribute("role", "button");
+    link.setAttribute("aria-haspopup", "dialog");
+    link.setAttribute("aria-controls", "email-dialog");
+    link.setAttribute("aria-label", link.classList.contains("contact-arrow")
+      ? "Choose how to email Areen"
+      : "areenali98@gmail.com — choose email options");
+    link.addEventListener("click", (event) => {
+      // Keep standard modified-click behavior for the Gmail fallback link.
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      emailOpener = link;
+      emailStatus.textContent = "";
+      emailDialog.showModal();
+      document.documentElement.classList.add("email-dialog-open");
+    });
+    link.addEventListener("keydown", (event) => {
+      if (event.key === " ") {
+        event.preventDefault();
+        link.click();
+      }
+    });
+  });
+  emailDialog.addEventListener("close", () => {
+    document.documentElement.classList.remove("email-dialog-open");
+    emailOpener?.focus();
+  });
+  emailDialog.addEventListener("keydown", (event) => {
+    if (event.key !== "Tab") return;
+    const controls = emailDialog.querySelectorAll("a[href], button, input");
+    const first = controls[0];
+    const last = controls[controls.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  });
+  emailDialog.addEventListener("click", (event) => {
+    if (event.target !== emailDialog) return;
+    const bounds = emailDialog.getBoundingClientRect();
+    if (event.clientX < bounds.left || event.clientX > bounds.right ||
+        event.clientY < bounds.top || event.clientY > bounds.bottom) {
+      emailDialog.close();
+    }
+  });
+  emailDialog.querySelector(".copy-email").addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(emailAddress.value);
+      emailStatus.textContent = "Email address copied.";
+    } catch {
+      emailAddress.focus();
+      emailAddress.select();
+      emailStatus.textContent = "Select Copy on your device, or press Ctrl+C (⌘C on Mac).";
+    }
+  });
+}
+
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector("#primary-navigation");
 if (menuButton && navigation) {

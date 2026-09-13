@@ -655,6 +655,113 @@ h2 {
 .contact-section a:focus-visible {
   outline-color: var(--accent);
 }
+.contact-help {
+  display: none;
+  margin-top: 14px;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+.js .contact-help,
+noscript .contact-help {
+  display: block;
+}
+.email-dialog-open {
+  overflow: hidden;
+}
+.email-dialog {
+  width: min(520px, calc(100% - 32px));
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: clamp(20px, 5vw, 32px);
+  border: 1px solid #5c7f9e;
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 24px 80px #0008;
+}
+.email-dialog::backdrop {
+  background: #0b1220d9;
+}
+.email-dialog-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.email-dialog h2 {
+  font-size: clamp(1.5rem, 5vw, 1.9rem);
+}
+.email-dialog-close {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--muted);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text);
+  font-size: 1.5rem;
+}
+.email-address-label {
+  display: block;
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+.email-address {
+  width: 100%;
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 1px solid var(--muted);
+  border-radius: 0;
+  font: inherit;
+  font-size: 1rem;
+  background: transparent;
+  color: var(--text);
+}
+.email-address:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.email-actions {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+.email-option {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  padding: 14px 16px;
+  border: 1px solid #5c7f9e;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text);
+  text-align: left;
+}
+.email-option:first-child {
+  background: var(--surface-hover);
+  border-color: var(--accent);
+}
+.email-option small {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+.email-option:hover,
+.email-dialog-close:hover {
+  background: var(--surface-hover);
+  border-color: var(--accent);
+}
+.email-status {
+  min-height: 1.5em;
+  margin-top: 16px;
+  font-size: 0.875rem;
+}
+.archive-content .text-link {
+  margin-top: 16px;
+}
 .site-footer {
   display: flex;
   justify-content: space-between;

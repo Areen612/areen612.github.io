@@ -156,180 +156,87 @@
               </h2>
             </div>
             <p>
-              Projects spanning<br />applications, data processing, and cloud
-              services.
+              Projects across application development, data processing, and
+              cloud services.
             </p>
           </div>
-          <article class="featured-project">
+          <article class="featured-project" id="project-delivery">
             <div class="route-visual">
               <div class="visual-topline">
-                <span>ROUTE OPTIMIZATION</span><span>01 / 07</span>
+                <span>DELIVERY WORKFLOW</span><span>01 / 11</span>
               </div>
-              <svg
-                class="route-diagram"
-                viewBox="0 0 600 320"
-                role="img"
-                aria-labelledby="route-title route-description"
-              >
-                <title id="route-title">Route planning concept</title>
-                <desc id="route-description">
-                  A schematic route links a starting point to a destination
-                  through two fuel stops. It illustrates the project’s routing
-                  concept, not an actual map or live route.
+              <svg class="route-diagram" viewBox="0 0 600 320" role="img"
+                aria-labelledby="delivery-title delivery-description">
+                <title id="delivery-title">Delivery system concept</title>
+                <desc id="delivery-description">
+                  Customer and driver mobile applications connect through a Django
+                  API, with order updates and an administration interface.
+                  This is a concept diagram, not a live system.
                 </desc>
-                <defs>
-                  <pattern
-                    id="map-grid"
-                    width="32"
-                    height="32"
-                    patternUnits="userSpaceOnUse"
-                  >
-                    <path
-                      d="M 32 0 L 0 0 0 32"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-opacity=".1"
-                    />
-                  </pattern>
-                </defs>
-                <rect width="600" height="320" fill="url(#map-grid)" />
-                <path
-                  d="M65 235 L155 235 Q185 235 185 205 L185 145 Q185 115 215 115 L345 115 Q375 115 375 85 L375 75 Q375 55 395 55 L535 55"
-                  fill="none"
-                  stroke="#19344f"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M65 235 L100 155 L290 215 L470 155 L535 55"
-                  fill="none"
-                  stroke="#19344f"
-                  stroke-opacity=".22"
-                  stroke-width="2"
-                  stroke-dasharray="5 7"
-                />
-                <g fill="#19344f">
-                  <circle cx="65" cy="235" r="8" />
-                  <circle cx="250" cy="115" r="7" />
-                  <circle cx="420" cy="55" r="7" />
-                  <circle cx="535" cy="55" r="8" />
+                <g fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M155 90 H235 M365 90 H445 M300 130 V210 M155 245 H235 M365 245 H445"
+                    stroke-dasharray="5 7" opacity=".5" />
+                  <rect x="30" y="50" width="125" height="80" rx="12" />
+                  <rect x="235" y="50" width="130" height="80" rx="12" />
+                  <rect x="445" y="50" width="125" height="80" rx="12" />
+                  <rect x="30" y="210" width="125" height="70" rx="12" />
+                  <rect x="235" y="210" width="130" height="70" rx="12" />
+                  <rect x="445" y="210" width="125" height="70" rx="12" />
                 </g>
-                <g fill="#b9dbf2" stroke="#19344f" stroke-width="2">
-                  <circle cx="65" cy="235" r="16" />
-                  <circle cx="535" cy="55" r="16" />
-                </g>
-                <g fill="#19344f">
-                  <circle cx="65" cy="235" r="5" />
-                  <circle cx="535" cy="55" r="5" />
-                </g>
-                <g
-                  fill="#19344f"
-                  font-family="Manrope, sans-serif"
-                  font-size="15"
-                  font-weight="700"
-                >
-                  <text x="39" y="277">START</text>
-                  <text x="220" y="151">Fuel stop</text>
-                  <text x="390" y="94">Fuel stop</text>
-                  <text x="458" y="22">DESTINATION</text>
+                <g fill="currentColor" font-family="Manrope, sans-serif" font-size="17"
+                  font-weight="700" text-anchor="middle">
+                  <text x="92" y="86">Customer</text><text x="92" y="110">app</text>
+                  <text x="300" y="96">Django API</text>
+                  <text x="507" y="86">Driver</text><text x="507" y="110">app</text>
+                  <text x="92" y="251">Maps</text>
+                  <text x="300" y="238">Order</text><text x="300" y="262">updates</text>
+                  <text x="507" y="251">Admin</text>
                 </g>
               </svg>
               <div class="visual-bottomline">
-                <span class="visual-pill">Route + fuel stops</span
-                ><span>Concept diagram ↗</span>
+                <span class="visual-pill">Customer → order → driver</span>
+                <span>Concept diagram</span>
               </div>
             </div>
             <div class="featured-copy">
-              <p class="eyebrow">Backend development · Routing</p>
-              <h3>Route planning<br />with fuel stops.</h3>
+              <p class="eyebrow">01 / Mobile &amp; backend</p>
+              <h3>Delivery and<br />services app.</h3>
               <p>
-                A route-planning API that finds cost-effective fuel stops along
-                a driving route in the USA, keeping unnecessary detours in mind.
+                A freelance delivery system connecting customer and driver mobile
+                apps with Django APIs, administration tools, and location services.
               </p>
               <ul class="tags" aria-label="Technologies">
-                <li>Django</li>
-                <li>AWS Location</li>
-                <li>REST API</li>
+                <li>Flutter</li><li>Django</li><li>Google Maps</li><li>WebSockets</li>
               </ul>
               <details class="project-details">
-                <summary>
-                  Inside the project <span aria-hidden="true">+</span>
-                </summary>
+                <summary>Inside the project <span aria-hidden="true">+</span></summary>
                 <div class="details-content">
                   <p>
-                    The application calculates an optimal driving route between
-                    two US locations, then identifies fuel stops along the way
-                    to help drivers reduce fuel costs without significant route
-                    deviations.
+                    Built Flutter interfaces and Django backend workflows for
+                    placing, assigning, accepting, and completing orders.
+                    Integrated maps, notifications, and WebSocket updates for
+                    order status and driver location.
                   </p>
-                  <a
-                    class="text-link"
-                    href="https://drive.google.com/file/d/1sHNVjFjrPdqvWSs9DqRC5s-tk4BaKvtF/view"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Watch the project demo <span aria-hidden="true">↗</span></a
-                  ><button
-                    class="text-link inline-demo-button"
-                    type="button"
-                    aria-controls="route-demo"
-                    hidden
-                  >
-                    Play demo here <span aria-hidden="true">▷</span>
-                  </button>
-                  <div class="video-container" id="route-demo" hidden></div>
                 </div>
               </details>
             </div>
           </article>
           <div class="project-grid">
-            <article class="project-tile">
+            <article class="project-tile" id="project-donor">
               <div class="tile-header">
-                <span class="eyebrow">02 / Mobile &amp; backend</span
-                ><span class="project-symbol" aria-hidden="true">↗</span>
-              </div>
-              <h3>Delivery and services app.</h3>
-              <p>
-                A freelance delivery and services app connecting customers and
-                drivers through mobile experiences and location-aware services.
-              </p>
-              <ul class="tags" aria-label="Technologies">
-                <li>Flutter</li>
-                <li>Django</li>
-                <li>Google Maps</li>
-              </ul>
-              <details class="project-details">
-                <summary>
-                  Inside the project <span aria-hidden="true">+</span>
-                </summary>
-                <div class="details-content">
-                  <p>
-                    Built the mobile frontend with Flutter and the backend APIs
-                    and administration panels with Django. Integrated Google
-                    Maps for both customers and drivers.
-                  </p>
-                </div>
-              </details>
-            </article>
-            <article class="project-tile">
-              <div class="tile-header">
-                <span class="eyebrow">03 / Data &amp; machine learning</span
-                ><span class="project-symbol" aria-hidden="true">⌁</span>
+                <span class="eyebrow">02 / Data &amp; machine learning</span>
+                <span class="project-symbol" aria-hidden="true">⌁</span>
               </div>
               <h3>Donor matching with data.</h3>
               <p>
-                A donor-matching solution that brings data extraction, machine
-                learning, and cloud services together to produce readable
-                results.
+                A team project combining document extraction, machine learning,
+                and AWS services to support donor matching.
               </p>
               <ul class="tags" aria-label="Technologies">
-                <li>Python</li>
-                <li>AWS Lambda</li>
-                <li>DVC</li>
+                <li>Python</li><li>AWS Lambda</li><li>Textract</li><li>DVC</li>
               </ul>
               <details class="project-details">
-                <summary>
-                  Inside the project <span aria-hidden="true">+</span>
-                </summary>
+                <summary>Inside the project <span aria-hidden="true">+</span></summary>
                 <div class="details-content">
                   <p>
                     Collaborated with a cross-functional team, wrote Lambda
@@ -341,18 +248,107 @@
                 </div>
               </details>
             </article>
+            <article class="project-tile" id="project-gci">
+              <div class="tile-header">
+                <span class="eyebrow">03 / Business applications</span>
+                <span class="project-symbol" aria-hidden="true">▤</span>
+              </div>
+              <h3>Inventory and invoicing.</h3>
+              <p>
+                A Django application for customers, catalogue items, invoices,
+                and loyalty rules, with admin and desktop interfaces.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Django</li><li>Python</li><li>PySide6</li><li>REST API</li>
+              </ul>
+              <details class="project-details">
+                <summary>Inside the project <span aria-hidden="true">+</span></summary>
+                <div class="details-content">
+                  <p>
+                    Implemented invoice and line-item validation, totals,
+                    customer loyalty rules, and invoice imports from JoFotara.
+                    The prototype includes Django administration, a PySide6
+                    desktop interface, and customer search.
+                  </p>
+                  <a class="text-link" href="https://github.com/Areen612/gci"
+                    target="_blank" rel="noopener noreferrer"
+                    >View source on GitHub <span aria-hidden="true">↗</span></a>
+                </div>
+              </details>
+            </article>
           </div>
           <div class="project-archive">
             <div class="archive-heading">
               <h3>Additional projects</h3>
-              <span class="eyebrow">Other systems and applications</span>
+              <span class="eyebrow">APIs, applied AI, and earlier work</span>
             </div>
-            <details class="archive-project">
+            <details class="archive-project" id="project-transcript">
               <summary>
-                <span class="archive-number">04</span
-                ><span class="archive-name">Employment &amp; training app</span
-                ><span class="archive-tech">Flutter · Firebase</span
-                ><span class="archive-plus" aria-hidden="true">+</span>
+                <span class="archive-number">04</span>
+                <span class="archive-name">Transcript analysis API</span>
+                <span class="archive-tech">FastAPI · Celery · PostgreSQL</span>
+                <span class="archive-plus" aria-hidden="true">+</span>
+              </summary>
+              <div class="archive-content">
+                <p>
+                  An Arabic and English customer-support transcript analysis
+                  prototype. FastAPI accepts jobs, Celery and Redis handle
+                  background processing, and PostgreSQL stores status and results.
+                  The worker redacts email, phone, and card patterns before LLM
+                  analysis, validates structured output, and handles failed jobs.
+                  Includes polling, rate limiting, health checks, and metrics.
+                </p>
+              </div>
+            </details>
+            <details class="archive-project" id="project-speechlog">
+              <summary>
+                <span class="archive-number">05</span>
+                <span class="archive-name">Speechlog Mini — Arabic speech API</span>
+                <span class="archive-tech">FastAPI · PyTorch · Whisper</span>
+                <span class="archive-plus" aria-hidden="true">+</span>
+              </summary>
+              <div class="archive-content">
+                <p>
+                  An audio-to-text pipeline combining resampling, Silero voice
+                  activity detection, segment merging, faster-whisper transcription,
+                  and Arabic text normalization. Returns timestamped segments through
+                  FastAPI, with Common Voice evaluation scripts for word and
+                  character error rates. Built as an experimental speech service.
+                </p>
+                <a class="text-link" href="https://github.com/Areen612/speechlog-mini"
+                  target="_blank" rel="noopener noreferrer"
+                  >View source on GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </details>
+            <details class="archive-project" id="project-route">
+              <summary>
+                <span class="archive-number">06</span>
+                <span class="archive-name">Route planning with fuel stops</span>
+                <span class="archive-tech">Django · AWS Location</span>
+                <span class="archive-plus" aria-hidden="true">+</span>
+              </summary>
+              <div class="archive-content">
+                <p>
+                  A Django API using AWS Location to calculate driving routes
+                  between US locations and select fuel stops using station prices,
+                  vehicle range, and detour constraints. Produces an interactive
+                  route map and a fuel-cost breakdown.
+                </p>
+                <a class="text-link"
+                  href="https://drive.google.com/file/d/1sHNVjFjrPdqvWSs9DqRC5s-tk4BaKvtF/view"
+                  target="_blank" rel="noopener noreferrer"
+                  >Watch the project demo <span aria-hidden="true">↗</span></a>
+                <button class="text-link inline-demo-button" type="button"
+                  aria-controls="route-demo" hidden>Play demo here <span aria-hidden="true">▷</span></button>
+                <div class="video-container" id="route-demo" hidden></div>
+              </div>
+            </details>
+            <details class="archive-project" id="project-employment">
+              <summary>
+                <span class="archive-number">07</span>
+                <span class="archive-name">Employment &amp; training app</span>
+                <span class="archive-tech">Flutter · Firebase</span>
+                <span class="archive-plus" aria-hidden="true">+</span>
               </summary>
               <div class="archive-content">
                 <p>
@@ -361,29 +357,47 @@
                 </p>
               </div>
             </details>
-            <details class="archive-project">
+            <details class="archive-project" id="project-mri">
               <summary>
-                <span class="archive-number">05</span
-                ><span class="archive-name"
-                  >Alzheimer’s stage classification</span
-                ><span class="archive-tech">Python · Machine learning</span
-                ><span class="archive-plus" aria-hidden="true">+</span>
+                <span class="archive-number">08</span>
+                <span class="archive-name">Alzheimer’s MRI classification</span>
+                <span class="archive-tech">Python · Deep learning</span>
+                <span class="archive-plus" aria-hidden="true">+</span>
               </summary>
               <div class="archive-content">
                 <p>
-                  A machine learning project exploring the classification of
-                  four stages of Alzheimer’s disease from MRI brain scans. Built
-                  as a Python machine learning exploration.
+                  An experimental machine learning project exploring four
+                  Alzheimer’s impairment categories from MRI brain scans,
+                  with image preprocessing, augmentation, and convolutional
+                  neural networks. A learning project, not a clinical tool.
+                </p>
+                <a class="text-link" href="https://github.com/Areen612/alzheimers_mri_cnn"
+                  target="_blank" rel="noopener noreferrer"
+                  >View source on GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </details>
+            <details class="archive-project" id="project-fraud">
+              <summary>
+                <span class="archive-number">09</span>
+                <span class="archive-name">Transaction fraud detection</span>
+                <span class="archive-tech">scikit-learn · LightGBM</span>
+                <span class="archive-plus" aria-hidden="true">+</span>
+              </summary>
+              <div class="archive-content">
+                <p>
+                  A notebook study comparing logistic regression, random forest,
+                  and LightGBM on an imbalanced transaction dataset. Explores
+                  stratified splits, robust scaling, SMOTE, and decision thresholds,
+                  using precision, recall, F1, and ROC AUC to compare results.
                 </p>
               </div>
             </details>
-            <details class="archive-project">
+            <details class="archive-project" id="project-maze">
               <summary>
-                <span class="archive-number">06</span
-                ><span class="archive-name"
-                  >A maze, built from the ground up</span
-                ><span class="archive-tech">Assembly</span
-                ><span class="archive-plus" aria-hidden="true">+</span>
+                <span class="archive-number">10</span>
+                <span class="archive-name">Assembly maze game</span>
+                <span class="archive-tech">Assembly</span>
+                <span class="archive-plus" aria-hidden="true">+</span>
               </summary>
               <div class="archive-content">
                 <p>
@@ -393,12 +407,12 @@
                 </p>
               </div>
             </details>
-            <details class="archive-project">
+            <details class="archive-project" id="project-job-board">
               <summary>
-                <span class="archive-number">07</span
-                ><span class="archive-name">Job board API</span
-                ><span class="archive-tech">Ruby on Rails · REST API</span
-                ><span class="archive-plus" aria-hidden="true">+</span>
+                <span class="archive-number">11</span>
+                <span class="archive-name">Job board API</span>
+                <span class="archive-tech">Ruby on Rails · REST API</span>
+                <span class="archive-plus" aria-hidden="true">+</span>
               </summary>
               <div class="archive-content">
                 <p>
@@ -406,6 +420,9 @@
                   create, read, update, and delete operations for job postings
                   and a system for applying to positions.
                 </p>
+                <a class="text-link" href="https://github.com/Areen612/job_board_api"
+                  target="_blank" rel="noopener noreferrer"
+                  >View source on GitHub <span aria-hidden="true">↗</span></a>
               </div>
             </details>
           </div>
@@ -789,13 +806,18 @@
             </h2>
             <a
               class="contact-arrow"
-              href="mailto:areenali98@gmail.com"
-              aria-label="Email Areen"
+              href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=areenali98%40gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-email-options
+              aria-label="Email Areen (opens Gmail)"
               ><span aria-hidden="true">↗</span></a
             >
           </div>
           <div class="contact-bottom">
-            <a class="email-link" href="mailto:areenali98@gmail.com"
+            <a class="email-link"
+              href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=areenali98%40gmail.com"
+              target="_blank" rel="noopener noreferrer" data-email-options
               >areenali98@gmail.com</a
             >
             <div>
@@ -812,9 +834,42 @@
               ><a href="tel:+962791560686">+962&nbsp;791&nbsp;560&nbsp;686</a>
             </div>
           </div>
+          <p class="contact-help">Choose Gmail, your email app, or copy the address.</p>
+          <noscript>
+            <p class="contact-help">Email links open Gmail. You can also
+              <a href="mailto:areenali98@gmail.com">use your default email app</a>.
+            </p>
+          </noscript>
         </div>
       </section>
     </main>
+    <dialog class="email-dialog" id="email-dialog" aria-labelledby="email-dialog-title"
+      aria-describedby="email-dialog-description">
+      <div class="email-dialog-heading">
+        <h2 id="email-dialog-title">Send me an email</h2>
+        <form method="dialog">
+          <button class="email-dialog-close" aria-label="Close email options" value="close">×</button>
+        </form>
+      </div>
+      <p id="email-dialog-description">Choose how you’d like to get in touch.</p>
+      <label class="email-address-label" for="contact-email-address">Email address</label>
+      <input id="contact-email-address" class="email-address" type="text"
+        value="areenali98@gmail.com" readonly />
+      <div class="email-actions">
+        <a class="email-option" autofocus
+          href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=areenali98%40gmail.com"
+          target="_blank" rel="noopener noreferrer">
+          <span>Write in Gmail <span aria-hidden="true">↗</span></span>
+          <small>Opens a compose window in a new tab. Sign-in may be needed.</small>
+        </a>
+        <a class="email-option" href="mailto:areenali98@gmail.com">
+          <span>Use my email app <span aria-hidden="true">↗</span></span>
+          <small>Opens the email app configured on your device.</small>
+        </a>
+        <button class="email-option copy-email" type="button">Copy email address</button>
+      </div>
+      <p class="email-status" role="status" aria-live="polite" aria-atomic="true"></p>
+    </dialog>
     <footer class="site-footer shell">
       <a class="footer-signature" href="#home"
         >Areen Albargothy<span>Software engineer · Full-stack developer · Amman, Jordan</span></a

@@ -18,9 +18,9 @@ Then open `http://127.0.0.1:4173/`.
 
 ## Structure
 
-- `index.html`: introduction, seven project summaries, biography, skills, one AWS certification, eleven course certificates, and contact links.
+- `index.html`: introduction, eleven project summaries, biography, skills, one AWS certification, eleven course certificates, and contact options.
 - `style.css`: theme tokens, component styling, responsive layouts, and reduced-motion support.
-- `script.js`: mobile navigation and the optional embedded project video.
+- `script.js`: mobile navigation, email choices, and the optional embedded project video.
 - `favicon.svg`: portfolio monogram.
 - `assets/fonts/`: self-hosted Manrope variable font and its SIL Open Font License.
 - `html_finalprojimages/`: original certificate images and retained reference assets.
@@ -29,7 +29,11 @@ Then open `http://127.0.0.1:4173/`.
 
 - Project details use native `<details>` elements and remain accessible without JavaScript.
 - Navigation remains visible when JavaScript is disabled. With JavaScript, mobile visitors receive a menu with an expanded state, Escape-key support, and automatic closing after selecting a section.
-- The route diagram is a conceptual illustration, not a screenshot, real map, or live routing result.
+- Projects run from broader system implementations to smaller scoped work. The order is an editorial estimate of implementation complexity based on application scope, integrations, business rules, and data/ML processing; it is not a measured difficulty score.
+- The delivery diagram is a conceptual illustration, not a screenshot or live system. The delivery system, donor-matching collaboration, and GCI invoicing prototype lead the section. Transcript analysis, Speechlog Mini, and transaction fraud detection are included alongside earlier projects.
+- Public source links are provided where available. Private repositories and restricted notebooks are described without publishing their contents or adding inaccessible links.
+- Both contact triggers open a native dialog with Gmail compose, the default email app, and a copy-address button. Gmail opens in a new tab with the recipient filled in; the visitor writes and sends the message. The default-app option requires a configured mail handler. Copy failures select the address and explain how to copy it manually.
+- Escape and the close button dismiss the email dialog and restore focus. Without JavaScript or dialog support, the contact links open Gmail directly; a no-JavaScript default-app link is also available.
 - The original Google Drive demo remains linked directly. Its embedded player loads only when the visitor selects **Play demo here**.
 - AWS Certified AI Practitioner is the first of three featured credentials, followed by the IBM Python and Django courses. Microsoft Learn AI Skills Challenge appears in the smaller list. The AWS card links to the official verification portal and includes the validation number and validity dates.
 - The AWS image is rendered directly from the supplied certificate PDF at 1980 × 1530 pixels and optimized as a lossless WebP (about 75 KiB). Certificate artwork retains its issuer's original colors.
